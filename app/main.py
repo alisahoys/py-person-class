@@ -9,7 +9,8 @@ class Person:
 
 def create_person_list(people: list) -> list:
 
-    people_instances = [Person(person["name"], person["age"]) for person in people]
+    people_instances = [Person(person["name"],
+                               person["age"]) for person in people]
 
     for person in people:
         current_person = Person.people[person["name"]]
